@@ -1,13 +1,97 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Cabin", sans-serif;
+}
+
+.container h2 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.searchfields__container {
+  background-image: url("assets/news.png");
+  padding: 50px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+}
+.searchfields__container form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.877);
+  padding: 40px;
+  border-radius: 50px;
+  box-shadow: -3px 7px 16px -5px rgb(0 0 0 / 74%);
+  -webkit-box-shadow: -3px 7px 16px -5px rgb(0 0 0 / 74%);
+  -moz-box-shadow: -3px 7px 16px -5px rgba(0, 0, 0, 0.74);
+}
+.lasttwo {
+  text-align: center;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.newsCard__wrapper {
+  background-image: url("assets/bg-news.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.newsCard__container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  justify-content: center;
+  padding: 0px 20px;
+  padding-top: 90px;
+  text-align: left;
+}
+.newsCard__single {
+  position: relative;
+  max-width: 250px;
+  box-shadow: -3px 7px 16px -5px rgb(0 0 0 / 74%);
+  -webkit-box-shadow: -3px 7px 16px -5px rgb(0 0 0 / 74%);
+  -moz-box-shadow: -3px 7px 16px -5px rgba(0, 0, 0, 0.74);
+  border-radius: 25px;
+  padding: 25px 10px;
+  margin-bottom: 50px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.newscard__end {
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  right: 0;
+}
+.newsCard__single a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.newsCard__single img {
+  width: 100%;
+  margin: 10px 0px;
+}
+.newscard__desc {
+  line-height: 26px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+}
+
+.loadmore__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
