@@ -1,5 +1,7 @@
 import axios from "axios";
 
+
+// const API_KEY =  api key from newsapi.org
 const BASE_URL = "https://newsapi.org/v2/everything";
 const BASE_URL_TOP = "https://newsapi.org/v2/top-headlines?country=us";
 
